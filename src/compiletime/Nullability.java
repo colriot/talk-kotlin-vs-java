@@ -13,7 +13,7 @@ public class Nullability {
   }
 
   private static void handleUser(JUser user) {
-    Objects.requireNonNull(user);
+    Objects.requireNonNull(user, "User should not be null.");
     System.out.println("User's name: " + user.getFirstName());
   }
 

@@ -14,6 +14,7 @@ private fun desribe(notification: KNotification) =
       is KMessageNotification     -> "New message: ${notification.text}"
       is KLikeNotification        -> "You were ${if (!notification.wasLiked) "un" else ""}liked"
       is KPostUpdatesNotification -> "You have ${notification.newCommentsCount} new comments"
+//      else                        -> "... You don't need this anymore"
     }
 
 fun main(args: Array<String>) {

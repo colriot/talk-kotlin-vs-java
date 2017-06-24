@@ -1,7 +1,9 @@
 package compiletime;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
+
+import static java.util.Arrays.asList;
 
 /**
  * @author Sergey Ryabov <colriot@gmail.com>
@@ -14,7 +16,7 @@ public class Collections {
   }
 
   private static List<String> getTurtles() {
-    return Arrays.asList("Leo", "Don", "Raf", "Mike");
+    return new ArrayList<>(asList("Leo", "Don", "Raf", "Mike"));
   }
 
   private static void infiltrate(List<String> src) {
